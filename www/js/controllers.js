@@ -52,5 +52,5 @@ angular.module('starter.controllers', [])
     person.assessCooper($scope.data.distance);
     $scope.person = person;
     console.log($scope.person)
-  }
+  };
 });

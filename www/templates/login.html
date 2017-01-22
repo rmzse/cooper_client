@@ -22,4 +22,11 @@
       </div>
     </form>
   </ion-content>
+  <ion-content>
+    <div class="row" ng-if="errorMessage">
+      <p ng-repeat="error in errorMessage.errors">
+        {{error}}
+      </p>
+    </div>
+  </ion-content>
 </ion-modal-view>

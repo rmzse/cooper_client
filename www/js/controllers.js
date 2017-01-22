@@ -9,6 +9,11 @@ angular.module('starter.controllers', [])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
+  // Create the user on successful authentication
+  $rootScope.$on('auth:login-success', function(ev, user) {
+    $scope.currentUser = user;
+  });
+
   // Form data for the login modal
   $scope.loginData = {};
 
